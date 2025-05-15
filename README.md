@@ -91,7 +91,7 @@
    
 1.2 Обзор основных методологий
 
-  1.	PTES (Penetration Testing Execution Standard)
+1.	PTES (Penetration Testing Execution Standard)
 
   o	Этап Reconnaissance включает сбор всей возможной информации об инфраструктуре клиента.
   o	Пример: перед аудитом предприятия производится сканирование всех возможных публичных IP-адресов и доменов.
