@@ -374,21 +374,21 @@ output {
 
 Книги:
 
-Michael Bazzell — OSINT Techniques
+  Michael Bazzell — OSINT Techniques
 
-Justin Seitz — Black Hat Python
+  Justin Seitz — Black Hat Python
 
 Курсы:
 
-TryHackMe — OSINT Challenges
+  TryHackMe — OSINT Challenges
 
-Hack The Box Academy — Recon & Enumeration
+  Hack The Box Academy — Recon & Enumeration
 
 Онлайн-ресурсы:
 
-Bellingcat OSINT Handbook
+  Bellingcat OSINT Handbook
 
-PublicWWW для поиска фрагментов кода на веб-страницах
+  PublicWWW для поиска фрагментов кода на веб-страницах
 
 ## Ответственный по проектной (учебной) практике
 
