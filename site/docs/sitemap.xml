@@ -3,48 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>//localhost:1313/variant/</loc>
+    <loc>/variant/</loc>
     <lastmod>2025-05-16T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>//localhost:1313/</loc>
+    <loc>/</loc>
     <lastmod>2025-05-16T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>//localhost:1313/journal/</loc>
+    <loc>/journal/post6/</loc>
     <lastmod>2025-05-05T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>//localhost:1313/journal/post6/</loc>
-    <lastmod>2025-05-05T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>//localhost:1313/journal/post5/</loc>
+    <loc>/journal/post5/</loc>
     <lastmod>2025-04-28T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>//localhost:1313/journal/post4/</loc>
+    <loc>/journal/post4/</loc>
     <lastmod>2025-04-21T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>//localhost:1313/journal/post3/</loc>
+    <loc>/journal/post3/</loc>
     <lastmod>2025-04-14T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>//localhost:1313/journal/post2/</loc>
+    <loc>/journal/post2/</loc>
     <lastmod>2025-04-07T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>//localhost:1313/journal/post1/</loc>
+    <loc>/journal/post1/</loc>
     <lastmod>2025-03-31T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>//localhost:1313/about/</loc>
+    <loc>/journal/</loc>
   </url>
   <url>
-    <loc>//localhost:1313/resources/</loc>
+    <loc>/about/</loc>
   </url>
   <url>
-    <loc>//localhost:1313/participants/</loc>
+    <loc>/resources/</loc>
+  </url>
+  <url>
+    <loc>/participants/</loc>
   </url>
 </urlset>
