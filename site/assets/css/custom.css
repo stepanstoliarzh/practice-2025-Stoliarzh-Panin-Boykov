@@ -1,12 +1,12 @@
 /* Цвет основного фона */
-body {
-  background: linear-gradient(to top, #003366 33%, #0066cc 66%, #3399ff 100%) fixed;
-  color: #000;
+:root {
+  --header-text-color: #ffffff !important;
+  --nav-text-color: #ffffff !important;
 }
 
-:root {
-  --header-text-color: #ffffff;
-  --nav-text-color: #ffffff;
+body {
+  background: linear-gradient(to top, #003366 33%, #0066cc 66%, #3399ff 100%) fixed !important;
+  color: #000;
 }
 
 header .site-title,
