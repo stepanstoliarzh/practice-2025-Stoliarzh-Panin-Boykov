@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Водный спорт (I курс)</title>
-    <link>//localhost:1313/categories/</link>
+    <link>https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/categories/</link>
     <description>Recent content in Categories on Водный спорт (I курс)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <copyright>© 2025 </copyright>
-    <atom:link href="//localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/categories/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>
