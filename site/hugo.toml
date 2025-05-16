@@ -39,5 +39,7 @@ showDate = false
 showReadingTime = false
 showWordCount = false
 
+publishDir = "docs"
+
 
 
