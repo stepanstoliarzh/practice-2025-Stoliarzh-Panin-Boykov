@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/'
 languageCode = 'ru'
 title = 'Водный спорт (I курс)'
 theme = 'blowfish'
