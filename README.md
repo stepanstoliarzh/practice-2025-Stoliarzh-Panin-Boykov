@@ -390,7 +390,7 @@ output {
 
   PublicWWW для поиска фрагментов кода на веб-страницах
   
-Практическая часть - Внешняя разведка testphp.vulnweb.com:
+_Практическая часть - Внешняя разведка testphp.vulnweb.com_(bold):
 
 WHOIS
 
