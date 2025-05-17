@@ -256,8 +256,11 @@ header .container {
 
 .journal-stages {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .journal-stage-card {
@@ -381,4 +384,46 @@ header .container {
   .journal-entry li {
     font-size: 1rem;
   }
+
+}
+
+.journal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+  max-width: 1400px; 
+  margin: 40px auto 0;
+  align-items: stretch;
+}
+
+.journal-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+  font-size: 1.05rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.journal-card h3 {
+  font-size: 1.3rem;
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.journal-card .entry-date {
+  display: inline-block;
+  background: #e6f2ff;
+  color: #003366;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
