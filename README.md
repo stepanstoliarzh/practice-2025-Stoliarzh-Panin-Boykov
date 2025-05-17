@@ -389,9 +389,11 @@ output {
   Bellingcat OSINT Handbook
 
   PublicWWW для поиска фрагментов кода на веб-страницах
+  
 Практическая часть - Внешняя разведка testphp.vulnweb.com:
 
 WHOIS
+
     Domain Name: VULNWEB.COM  
     Registrar: EuroDNS S.A.  
     Creation Date: 2010-06-14  
@@ -410,6 +412,7 @@ Amass (Passive)
     www.testphp.vulnweb.com  
 
 Nmap Scan (Top 1000 TCP Ports)
+
     Host: testphp.vulnweb.com
     IP: 44.228.249.3
     rDNS: ec2-44-228-249-3.us-west-2.compute.amazonaws.com
@@ -438,35 +441,24 @@ Nmap Scan (Top 1000 TCP Ports)
     974/tcp closed unknown
 
 LeakIX
+
     Search Target: testphp.vulnweb.com
     Results Found: 1
     Country: Russia
     Source Plugin: ApacheStatusPlugin
     Network: OOO Network of data-centers Selectel
     IP Range: 5.53.120.0/22
-    
     Related Host:
-    
     Domain: www.cam-cad.ru (medium risk)
-    
-    ASN: 50340
-    
-    Event Count: 212 events in 978 days
-    
-    Open Ports: 443
-    
-    Certificate Domains:
-    
-    edgecam.ru
-    
-    www.edgecam.ru
-    
-    www.cam-cad.ru
-    
-    cam-cad.ru
-    
-    Redirect Header: goto=http://testphp.vulnweb.com
-    
+    ASN: 50340    
+    Event Count: 212 events in 978 days    
+    Open Ports: 443    
+    Certificate Domains:    
+    edgecam.ru    
+    www.edgecam.ru    
+    www.cam-cad.ru    
+    cam-cad.ru    
+    Redirect Header: goto=http://testphp.vulnweb.com    
     Server Banner:
     HTTP/1.1 200 OK  
     Server: nginx/1.19.0
@@ -477,21 +469,16 @@ LeakIX
 Hunter.io
     Domain: testphp.vulnweb.com
     Organization: Acunetix WVS
-    Disposable Email: ❌
-    Webmail Provider: ❌
-    Accept-All Policy: ❌
+    Disposable Email: -
+    Webmail Provider: -
+    Accept-All Policy: -
     Detected Email Pattern: null
     Emails Found: []
     Linked Domains: []
-    
     Technologies Identified:
-    
     Dreamweaver
-    
     Nginx
-    
     PHP
-    
     Ubuntu
 
 ## Ответственный по проектной (учебной) практике
