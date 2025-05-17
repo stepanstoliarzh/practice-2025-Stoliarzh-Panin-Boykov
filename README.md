@@ -389,6 +389,110 @@ output {
   Bellingcat OSINT Handbook
 
   PublicWWW для поиска фрагментов кода на веб-страницах
+Практическая часть - Внешняя разведка testphp.vulnweb.com:
+
+WHOIS
+    Domain Name: VULNWEB.COM  
+    Registrar: EuroDNS S.A.  
+    Creation Date: 2010-06-14  
+    Expiry Date: 2025-06-14  
+    Registrar WHOIS Server: whois.eurodns.com  
+    Registrar Abuse Contact: legalservices@eurodns.com  
+    Name Servers:  
+    - NS1.EURODNS.COM  
+    - NS2.EURODNS.COM  
+    - NS3.EURODNS.COM  
+    - NS4.EURODNS.COM  
+    DNSSEC: unsigned  
+
+Amass (Passive)
+    testphp.vulnweb.com  
+    www.testphp.vulnweb.com  
+
+Nmap Scan (Top 1000 TCP Ports)
+    Host: testphp.vulnweb.com
+    IP: 44.228.249.3
+    rDNS: ec2-44-228-249-3.us-west-2.compute.amazonaws.com
+    
+    Open Ports:
+    80/tcp  open   http
+    Other Ports:
+    100/tcp closed newacct
+    150/tcp closed sql-net
+    175/tcp closed vmnet
+    286/tcp closed fxp
+    310/tcp closed bhmds
+    356/tcp closed cloanto-net-1
+    413/tcp closed smsp
+    480/tcp closed loadsrv
+    528/tcp closed custix
+    538/tcp closed gdomap
+    560/tcp closed rmonitor
+    581/tcp closed bdp
+    674/tcp closed acap
+    698/tcp closed olsr
+    716/tcp closed pana
+    854/tcp closed dlep
+    909/tcp closed unknown
+    926/tcp closed unknown
+    974/tcp closed unknown
+
+LeakIX
+    Search Target: testphp.vulnweb.com
+    Results Found: 1
+    Country: Russia
+    Source Plugin: ApacheStatusPlugin
+    Network: OOO Network of data-centers Selectel
+    IP Range: 5.53.120.0/22
+    
+    Related Host:
+    
+    Domain: www.cam-cad.ru (medium risk)
+    
+    ASN: 50340
+    
+    Event Count: 212 events in 978 days
+    
+    Open Ports: 443
+    
+    Certificate Domains:
+    
+    edgecam.ru
+    
+    www.edgecam.ru
+    
+    www.cam-cad.ru
+    
+    cam-cad.ru
+    
+    Redirect Header: goto=http://testphp.vulnweb.com
+    
+    Server Banner:
+    HTTP/1.1 200 OK  
+    Server: nginx/1.19.0
+    Hashes (first event):
+    06d06d00006d06d00006d06d06dac2f367c0bda216d1681f422030888d  
+    ee80c6706842d3ef5b842d3ef6325bb316325bb317700b2e77700b2e7b1f89c17
+
+Hunter.io
+    Domain: testphp.vulnweb.com
+    Organization: Acunetix WVS
+    Disposable Email: ❌
+    Webmail Provider: ❌
+    Accept-All Policy: ❌
+    Detected Email Pattern: null
+    Emails Found: []
+    Linked Domains: []
+    
+    Technologies Identified:
+    
+    Dreamweaver
+    
+    Nginx
+    
+    PHP
+    
+    Ubuntu
 
 ## Ответственный по проектной (учебной) практике
 
