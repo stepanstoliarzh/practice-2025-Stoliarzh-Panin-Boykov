@@ -2,37 +2,56 @@
 title: Журнал
 ---
 
-<div class="journal-section-wrapper">
-  
-  <div class="journal-stages">
-    <!-- Этап 6 -->
-    <a href="/journal/post6" class="journal-stage-card">
-      <h3>Этап 6 — Дальнейшие улучшения</h3>
-    </a>
-    
-    <!-- Этап 5 -->
-    <a href="/journal/post5" class="journal-stage-card">
-      <h3>Этап 5 — Четвертая версия парсинга</h3>
-    </a>
-    
-    <!-- Этап 4 -->
-    <a href="/journal/post4" class="journal-stage-card">
+<div class="journal-grid" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; padding: 40px; background: white; border-radius: 16px; max-width: 1500px; margin: auto;">
+
+  <!-- Левая колонка -->
+  <div style="flex: 1; min-width: 300px; max-width: 450px;">
+    <div class="journal-card">
       <h3>Этап 4 — Третья версия парсинга</h3>
-    </a>
-    
-    <!-- Этап 3 -->
-    <a href="/journal/post3" class="journal-stage-card">
-      <h3>Этап 3 — Вторая версия парсинга</h3>
-    </a>
-    
-    <!-- Этап 2 -->
-    <a href="/journal/post2" class="journal-stage-card">
-      <h3>Этап 2 — Первая версия парсинга</h3>
-    </a>
-    
-    <!-- Этап 1 -->
-    <a href="/journal/post1" class="journal-stage-card">
+      <p>21.04.2025: Расширили поиск спотов по остальным странам (например, Франция, Израиль и другие). Добавили черный и белый список для исключения неподходящих мест. Расширили фильтрацию и базу данных.</p>
+    </div>
+    <div class="journal-card">
       <h3>Этап 1 — Задания</h3>
-    </a>
+      <p>31.03.2025: На встрече с куратором Иваном Николаевичем Лебедевым были распределены задачи. Наша команда (Столярж С.А., Бойков Т.А., Панин Д.О.) получила задание по парсингу.</p>
+    </div>
   </div>
+
+  <!-- Средняя колонка -->
+  <div style="flex: 1; min-width: 300px; max-width: 450px;">
+    <div class="journal-card">
+      <h3>Этап 5 — Четвертая версия парсинга</h3>
+      <p>28.04.2025: Реализован парсинг контактных данных и графика работы. Добавлен рейтинг с Яндекс.Карт. Улучшено сохранение базы данных, добавлено +40 спотов.</p>
+    </div>
+    <div class="journal-card">
+      <h3>Этап 2 — Первая версия парсинга</h3>
+      <p>07.04.2025: Создана блок-схема импорта и первая версия программы. Отсутствовала фильтрация, адреса были некорректны, база данных трудна в использовании.</p>
+    </div>
+  </div>
+
+  <!-- Правая колонка -->
+  <div style="flex: 1; min-width: 300px; max-width: 450px;">
+    <div class="journal-card">
+      <h3>Этап 6 — Дальнейшие улучшения</h3>
+      <p>С 05.05.2025: Продолжается улучшение парсера, устранение найденных ошибок и увеличение количества найденных спотов.</p>
+    </div>
+    <div class="journal-card">
+      <h3>Этап 3 — Вторая версия парсинга</h3>
+      <p>14.04.2025: Исправлены проблемы с адресами. Споты стали сортироваться по категориям. Добавлена фильтрация и расширена структура базы данных.</p>
+    </div>
+  </div>
+
 </div>
+
+<style>
+  .journal-card {
+    background: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  .journal-card h3 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+</style>
