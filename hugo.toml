@@ -40,7 +40,7 @@ showReadingTime = false
 showWordCount = false
 
 [permalinks]
-journal = "/journal/:filename.html"
+journal = "/journal/:filename/"
 
 
 

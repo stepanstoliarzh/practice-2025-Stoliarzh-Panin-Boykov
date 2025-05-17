@@ -422,3 +422,39 @@ header .container {
   font-weight: 500;
   margin-bottom: 1rem;
 }
+
+/* Навигация между этапами */
+.journal-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  background-color: #f0f8ff;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #003366;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  border: 1px solid rgba(0, 102, 204, 0.2);
+}
+
+.nav-button:hover {
+  background-color: #d0e8ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 102, 204, 0.1);
+}
+
+/* Для первой страницы (только вперед) */
+.journal-navigation.forward-only {
+  justify-content: flex-end;
+}
+
+/* Для последней страницы (только назад) */
+.journal-navigation.back-only {
+  justify-content: flex-start;
+}
