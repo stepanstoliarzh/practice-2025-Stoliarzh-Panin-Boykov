@@ -255,12 +255,12 @@ header .container {
 }
 
 .journal-stages {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   padding: 15px;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 900px;
 }
 
 .journal-stage-card {
@@ -457,4 +457,19 @@ header .container {
 /* Для последней страницы (только назад) */
 .journal-navigation.back-only {
   justify-content: flex-start;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.journal-img-small {
+  max-width: 48%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
