@@ -2,73 +2,81 @@
 title: "Вариативная часть задания"
 ---
 
-<div class="journal-entry-wrapper">
-  <h2>Методология разведки внешней корпоративной сети</h2>
+<div class="variant-wrapper">
+  <h2 class="variant-title">Методология разведки внешней корпоративной сети</h2>
 
-  <div class="journal-stage-card">
-    <h3>Введение</h3>
-    <p>
+  <div class="variant-card">
+    <h3 class="variant-heading">Введение</h3>
+    <p class="variant-text">
       Практика направлена на освоение методов разведки внешних сетей с использованием OSINT-инструментов. Основные задачи:
     </p>
-    <ul>
+    <ul class="variant-list">
       <li>Изучение инструментов пассивной/активной разведки</li>
       <li>Практическое применение методов сбора данных</li>
       <li>Анализ уязвимостей через фреймворки MITRE ATT&CK и Cyber Kill Chain</li>
     </ul>
-    <p>
+    <p class="variant-text">
       <strong>Объект исследования:</strong> Демонстрационный сайт <code>testphp.vulnweb.com</code> (разрешен для тестирования).
     </p>
   </div>
 
-  <div class="journal-stage-card">
-    <h3>Ход работы</h3>
-    <h4>1. Подготовка среды</h4>
-    <p>
-      Установка и настройка инструментов:
-    </p>
-    <div class="image-row">
-      <img src="/practice-2025-Stoliarzh-Panin-Boykov/images/amass_install.png" alt="Установка Amass">
-      <img src="/practice-2025-Stoliarzh-Panin-Boykov/images/nmap_install.png" alt="Установка Nmap">
+  <div class="variant-card">
+    <h3 class="variant-heading">Ход работы</h3>
+    
+    <div class="variant-section">
+      <h4 class="variant-subheading">1. Подготовка среды</h4>
+      <p class="variant-text">
+        Установка и настройка инструментов:
+      </p>
+      <div class="variant-gallery">
+        <img src="/practice-2025-Stoliarzh-Panin-Boykov/images/amass_install.png" alt="Установка Amass">
+        <img src="/practice-2025-Stoliarzh-Panin-Boykov/images/nmap_install.png" alt="Установка Nmap">
+      </div>
+      <p class="variant-text">
+        <strong>Основные инструменты:</strong> Amass, Nmap, Shodan, LeakIX, Hunter.io, whois
+      </p>
     </div>
-    <p>
-      <strong>Основные инструменты:</strong> Amass, Nmap, Shodan, LeakIX, Hunter.io, whois
-    </p>
 
-    <h4>2. Пассивная разведка</h4>
-    <p>
-      <strong>Amass:</strong> Обнаружены поддомены:
-    </p>
-    <ul>
-      <li><code>testphp.vulnweb.com</code></li>
-      <li><code>www.testphp.vulnweb.com</code></li>
-    </ul>
-    <p>
-      <strong>WHOIS:</strong> Домен зарегистрирован в 2010 году (EuroDNS), истекает в 2025.
-    </p>
+    <div class="variant-section">
+      <h4 class="variant-subheading">2. Пассивная разведка</h4>
+      <p class="variant-text">
+        <strong>Amass:</strong> Обнаружены поддомены:
+      </p>
+      <ul class="variant-list">
+        <li><code>testphp.vulnweb.com</code></li>
+        <li><code>www.testphp.vulnweb.com</code></li>
+      </ul>
+      <p class="variant-text">
+        <strong>WHOIS:</strong> Домен зарегистрирован в 2010 году (EuroDNS), истекает в 2025.
+      </p>
+    </div>
 
-    <h4>3. Активная разведка</h4>
-    <p>
-      <strong>Nmap:</strong> Открыт порт <code>80/tcp</code> (nginx/1.19.0).<br>
-      Пример команды:
-    </p>
-    <pre><code>nmap -sS -Pn -p1-1000 testphp.vulnweb.com</code></pre>
-    <p>
-      <strong>Shodan:</strong> Выявлены уязвимости:
-    </p>
-    <ul>
-      <li>CVE-2021-23017 (DoS в nginx)</li>
-      <li>CVE-2023-44487 (HTTP/2 атака)</li>
-      <li>CVE-2021-3618 (TLS-подмена)</li>
-    </ul>
+    <div class="variant-section">
+      <h4 class="variant-subheading">3. Активная разведка</h4>
+      <p class="variant-text">
+        <strong>Nmap:</strong> Открыт порт <code>80/tcp</code> (nginx/1.19.0).<br>
+        Пример команды:
+      </p>
+      <pre class="variant-code"><code>nmap -sS -Pn -p1-1000 testphp.vulnweb.com</code></pre>
+      <p class="variant-text">
+        <strong>Shodan:</strong> Выявлены уязвимости:
+      </p>
+      <ul class="variant-list">
+        <li>CVE-2021-23017 (DoS в nginx)</li>
+        <li>CVE-2023-44487 (HTTP/2 атака)</li>
+        <li>CVE-2021-3618 (TLS-подмена)</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="journal-stage-card">
-    <h3>Результаты</h3>
-    <div class="image-row">
+  <div class="variant-card">
+    <h3 class="variant-heading">Результаты</h3>
+    <div class="variant-gallery">
       <img src="/practice-2025-Stoliarzh-Panin-Boykov/images/shodan_results.png" alt="Результаты Shodan">
       <img src="/practice-2025-Stoliarzh-Panin-Boykov/images/leakix_results.png" alt="Результаты LeakIX">
     </div>
-    <table>
+    
+    <table class="variant-table">
       <tr>
         <th>Инструмент</th>
         <th>Найденные данные</th>
@@ -87,38 +95,40 @@ title: "Вариативная часть задания"
       </tr>
     </table>
 
-    <h4>Анализ через MITRE ATT&CK</h4>
-    <ul>
-      <li><strong>CVE-2021-23017:</strong> T1203 (Exploitation)</li>
-      <li><strong>CVE-2023-44487:</strong> T1499 (DoS)</li>
-      <li><strong>CVE-2021-3618:</strong> T1557 (MitM)</li>
-    </ul>
+    <div class="variant-section">
+      <h4 class="variant-subheading">Анализ через MITRE ATT&CK</h4>
+      <ul class="variant-list">
+        <li><strong>CVE-2021-23017:</strong> T1203 (Exploitation)</li>
+        <li><strong>CVE-2023-44487:</strong> T1499 (DoS)</li>
+        <li><strong>CVE-2021-3618:</strong> T1557 (MitM)</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="journal-stage-card">
-    <h3>Выводы</h3>
-    <p>
+  <div class="variant-card">
+    <h3 class="variant-heading">Выводы</h3>
+    <p class="variant-text">
       Освоены:
     </p>
-    <ul>
+    <ul class="variant-list">
       <li>Работа с инструментами разведки (Amass, Nmap, Shodan)</li>
       <li>Интерпретация данных через фреймворки безопасности</li>
       <li>Оформление отчетов</li>
     </ul>
-    <p>
+    <p class="variant-text">
       <strong>Рекомендации:</strong><br>
       Для защиты подобных систем необходимо:
     </p>
-    <ol>
+    <ol class="variant-list">
       <li>Обновить nginx до актуальной версии</li>
       <li>Настроить WAF для блокировки HTTP/2 атак</li>
       <li>Мониторить поддомены на предмет утечек</li>
     </ol>
   </div>
 
-  <div class="journal-stage-card">
-    <h3>Использованные источники</h3>
-    <ul>
+  <div class="variant-card">
+    <h3 class="variant-heading">Использованные источники</h3>
+    <ul class="variant-list">
       <li><a href="https://attack.mitre.org/" target="_blank">MITRE ATT&CK</a></li>
       <li><a href="https://www.shodan.io/" target="_blank">Shodan</a></li>
       <li><a href="https://leakix.net/" target="_blank">LeakIX</a></li>
