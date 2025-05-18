@@ -1,9 +1,10 @@
-baseURL = 'https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/'
+baseURL = "https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/"
 languageCode = 'en-us'
 title = 'Водный спорт (I курс)'
 theme = 'blowfish'
 defaultContentLanguage = 'ru'
 enableRobotsTXT = true
+publishDir = "docs"
 
 [menu]
 
