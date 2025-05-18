@@ -39,4 +39,9 @@ showDate = false
 showReadingTime = false
 showWordCount = false
 
+[permalinks]
+journal = "/journal/:filename/"
+
+
+
 

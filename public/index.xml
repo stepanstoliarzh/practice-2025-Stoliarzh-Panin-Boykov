@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Проект по дисциплине «Проектная деятельность»</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on Проект по дисциплине «Проектная деятельность»</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <copyright>© 2025 </copyright>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title></title>
+      <link>//localhost:1313/journal/post1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/journal/post1/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>//localhost:1313/journal/post2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/journal/post2/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>//localhost:1313/journal/post3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/journal/post3/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>О проекте</title>
+      <link>//localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/about/</guid>
+      <description>О проекте # Проект направлен на разработку информационного ресурса, посвящённого [описание проекта].</description>
+      
+    </item>
+    
+    <item>
+      <title>Ресурсы</title>
+      <link>//localhost:1313/resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/resources/</guid>
+      <description> Полезные материалы # Организация-партнёр Статья о технологии Инструменты разработки </description>
+      
+    </item>
+    
+    <item>
+      <title>Участники</title>
+      <link>//localhost:1313/participants/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/participants/</guid>
+      <description> Команда проекта # Иванов И.И. — Руководитель, разработка архитектуры Петров П.П. — Контент, сбор данных Сидоров С.С. — Верстка, медиа </description>
+      
+    </item>
+    
+  </channel>
+</rss>
