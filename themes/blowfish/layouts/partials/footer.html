@@ -1,30 +1,26 @@
 <footer id="site-footer" class="py-10 print:hidden">
-
-  {{/* Контекстное меню футера по текущей странице */}}
-<nav class="flex flex-row pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400">
-    <ul class="flex flex-col list-none sm:flex-row">
-      {{ if eq .RelPermalink "/about/" }}
-        <li class="mb-1 sm:mb-0 sm:mr-7"><a class="hover:underline" href="/participants/">Участники</a></li>
-
-      {{ else if eq .RelPermalink "/participants/" }}
-        <li class="mb-1 sm:mb-0 sm:mr-7"><a class="hover:underline" href="/about/">О проекте</a></li>
-        <li class="mb-1 sm:mb-0 sm:mr-7"><a class="hover:underline" href="/journal/">Журнал</a></li>
-
-      {{ else if eq .RelPermalink "/journal/" }}
-        <li class="mb-1 sm:mb-0 sm:mr-7"><a class="hover:underline" href="/participants/">Участники</a></li>
-        <li class="mb-1 sm:mb-0 sm:mr-7"><a class="hover:underline" href="/resources/">Ресурсы</a></li>
-
-      {{ else if eq .RelPermalink "/resources/" }}
-        <li class="mb-1 sm:mb-0 sm:mr-7"><a class="hover:underline" href="/journal/">Журнал</a></li>
-        <li class="mb-1 sm:mb-0 sm:mr-7"><a class="hover:underline" href="/variant/">Вариативное задание</a></li>
-
-      {{ else if eq .RelPermalink "/variant/" }}
-        <li class="mb-1 sm:mb-0 sm:mr-7"><a class="hover:underline" href="/resources/">Ресурсы</a></li>
-      {{ end }}
-    </ul>
-  </nav>
-
-
+  {{/* Footer menu */}}
+  {{ if .Site.Params.footer.showMenu | default true }}
+    {{ if .Site.Menus.footer }}
+    <nav class="flex flex-row pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400">
+      <ul class="flex flex-col list-none sm:flex-row">
+        {{ range .Site.Menus.footer }}
+        <li class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+          <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center" href="{{ .URL }}"
+            title="{{ .Title }}">
+            {{ if .Pre }}
+            <span {{ if and .Pre .Name}} class="mr-1" {{ end }}>
+                {{ partial "icon.html" .Pre }}
+            </span>
+            {{ end }}
+            {{ .Name | markdownify }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </nav>
+    {{ end }}
+  {{ end }}
   <div class="flex items-center justify-between">
 
     {{/* Copyright */}}
@@ -44,7 +40,8 @@
     {{ if .Site.Params.footer.showThemeAttribution | default true }}
     <p class="text-xs text-neutral-500 dark:text-neutral-400">
       {{ $hugo := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
-        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a>` }}
+        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a>`
+      }}
       {{ $blowfish := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
         href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>` }}
       {{ i18n "footer.powered_by" (dict "Hugo" $hugo "Theme" $blowfish) | safeHTML }}
@@ -52,7 +49,6 @@
     {{ end }}
 
   </div>
-
   <script>
     {{ if not .Site.Params.disableImageZoom | default true }}
     mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
@@ -65,9 +61,8 @@
   {{ $jsProcess := resources.Get "js/process.js" }}
   {{ $jsProcess = $jsProcess | resources.Minify | resources.Fingerprint "sha512" }}
   <script type="text/javascript" src="{{ $jsProcess.RelPermalink }}" integrity="{{ $jsProcess.Data.Integrity }}"></script>
-
+  {{/* Extend footer - eg. for extra scripts, etc. */}}
   {{ if templates.Exists "partials/extend-footer.html" }}
   {{ partialCached "extend-footer.html" . }}
   {{ end }}
-
 </footer>

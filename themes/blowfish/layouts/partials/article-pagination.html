@@ -1,4 +1,4 @@
-{{/* {{ if .Params.showPagination | default (.Site.Params.article.showPagination | default true) }}
+{{ if .Params.showPagination | default (.Site.Params.article.showPagination | default true) }}
   {{ if or .NextInSection .PrevInSection }}
     {{ $next := .NextInSection }}
     {{ $prev := .PrevInSection }}
@@ -63,4 +63,3 @@
     </div>
   {{ end }}
 {{ end }}
-*/}}

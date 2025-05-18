@@ -3,7 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish"
-baseURL = "https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/"
+baseURL = "https://localhost:1313"
 defaultContentLanguage = "en"
 disableLanguages = [] #to allow translation work requiring shipping to production
 

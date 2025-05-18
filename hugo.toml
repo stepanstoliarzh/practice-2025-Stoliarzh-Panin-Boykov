@@ -1,52 +1,41 @@
 baseURL = 'https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/'
-languageCode = 'ru'
+languageCode = 'en-us'
 title = 'Водный спорт (I курс)'
 theme = 'blowfish'
-publishDir = 'docs'
+defaultContentLanguage = 'ru'
+enableRobotsTXT = true
 
 [menu]
 
   [[menu.main]]
-  name = "О проекте"
-  url = "/about"
-  weight = 1
+    name = "О проекте"
+    url = "/about/"
+    weight = 1
 
   [[menu.main]]
-  name = "Участники"
-  url = "/participants"
-  weight = 2
+    name = "Участники"
+    url = "/participants/"
+    weight = 2
 
   [[menu.main]]
-  name = "Журнал"
-  url = "/journal"
-  weight = 3
+    name = "Журнал"
+    url = "/journal/"
+    weight = 3
 
   [[menu.main]]
-  name = "Ресурсы"
-  url = "/resources"
-  weight = 4
+    name = "Ресурсы"
+    url = "/resources/"
+    weight = 4
 
   [[menu.main]]
     name = "Мероприятие"
-    pageRef = "/visit"
+    url = "/visit/"
     weight = 5
 
   [[menu.main]]
-    name = "Вариативное задания"
-    pageRef = "/variant"
+    name = "Вариативное задание"
+    url = "/variant"
     weight = 6
-
-[params.assets]
-customCSS = ["css/custom.css"]
-
-[params.article]
-showDate = false
-showReadingTime = false
-showWordCount = false
-
-[permalinks]
-journal = "/journal/:filename/"
-
-
+    identifier = "variant"
 
 

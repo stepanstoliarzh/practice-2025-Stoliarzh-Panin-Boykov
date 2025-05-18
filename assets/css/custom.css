@@ -112,6 +112,7 @@ header .container {
   }
 }
 
+/* Стили для страницы о проекте */
 .about-swiper {
   width: 65%;
   display: flex;
@@ -196,6 +197,7 @@ header .container {
   transform: scale(1.05);
 }
 
+/* Стили для страницы ресурсы */
 .resources-wrapper {
   max-width: 950px;
   margin: 2rem auto;
@@ -303,62 +305,6 @@ header .container {
   }
 }
 
-/* Стили для страницы конкретного этапа журнала */
-.journal-entry-wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px;
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-}
-
-.journal-entry {
-  color: #333;
-  line-height: 1.7;
-}
-
-.journal-entry h2 {
-  color: #003366;
-  font-size: 1.5rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.journal-entry h2:first-child {
-  margin-top: 0;
-}
-
-.journal-entry p {
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
-}
-
-.journal-entry ul {
-  margin-bottom: 2rem;
-  padding-left: 1.5rem;
-}
-
-.journal-entry li {
-  margin-bottom: 0.8rem;
-  position: relative;
-  padding-left: 1.5rem;
-}
-
-.journal-entry strong {
-  color: #004080;
-  font-weight: 600;
-}
-
-.journal-entry em {
-  color: #555;
-  font-style: italic;
-}
-
-/* Блок с датой */
 .entry-date {
   display: inline-block;
   background: #e6f2ff;
@@ -423,42 +369,6 @@ header .container {
   margin-bottom: 1rem;
 }
 
-/* Навигация между этапами */
-.journal-navigation {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid #e0e0e0;
-}
-
-.nav-button {
-  padding: 10px 20px;
-  background-color: #f0f8ff;
-  border-radius: 30px;
-  text-decoration: none;
-  color: #003366;
-  transition: all 0.3s ease;
-  font-weight: 500;
-  border: 1px solid rgba(0, 102, 204, 0.2);
-}
-
-.nav-button:hover {
-  background-color: #d0e8ff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 102, 204, 0.1);
-}
-
-/* Для первой страницы (только вперед) */
-.journal-navigation.forward-only {
-  justify-content: flex-end;
-}
-
-/* Для последней страницы (только назад) */
-.journal-navigation.back-only {
-  justify-content: flex-start;
-}
-
 .image-row {
   display: flex;
   flex-wrap: wrap;
@@ -474,25 +384,55 @@ header .container {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1rem;
+nav ul li .extra-link {
+  display: none; /* скрываем метку */
 }
 
-.navbar-main a {
-  padding: 0.5rem 1.2rem;
-  border-radius: 9999px;
-  background-color: rgba(255, 255, 255, 0.25);
-  color: #fff;
+/* Обновленные стили для меню навигации */
+.navbar-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+  gap: 8px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.nav-item {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 8px 12px;
+  text-align: center;
+  color: white !important;
   font-weight: 600;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 0.9rem; /* Уменьшаем размер шрифта */
+  white-space: nowrap; /* Запрещаем перенос текста */
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.navbar-main a:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
 }
 
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+  .navbar-main {
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки на планшетах */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-main {
+    grid-template-columns: 1fr; /* 1 колонка на телефонах */
+  }
+  
+  .nav-item {
+    padding: 8px 5px;
+    font-size: 0.8rem;
+  }
+}
