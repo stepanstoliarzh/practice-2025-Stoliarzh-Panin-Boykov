@@ -27,9 +27,14 @@ publishDir = 'docs'
   weight = 4
 
   [[menu.main]]
+    name = "Мероприятие"
+    pageRef = "/visit"
+    weight = 5
+
+  [[menu.main]]
     name = "Вариативное задания"
     pageRef = "/variant"
-    weight = 5
+    weight = 6
 
 [params.assets]
 customCSS = ["css/custom.css"]
