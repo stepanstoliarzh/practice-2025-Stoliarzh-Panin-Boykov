@@ -1,4 +1,6 @@
 baseURL = "https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/"
+canonifyURLs = true
+relativeURLs = true
 languageCode = 'en-us'
 title = 'Водный спорт (I курс)'
 theme = 'blowfish'
@@ -38,5 +40,14 @@ publishDir = "docs"
     url = "/variant"
     weight = 6
     identifier = "variant"
+
+[[params.assets.css]]
+  path = "css/custom.css"
+  integrity = ""
+
+[build]
+  writeStats = true
+  noChmod = true
+  noTimes = true
 
 
