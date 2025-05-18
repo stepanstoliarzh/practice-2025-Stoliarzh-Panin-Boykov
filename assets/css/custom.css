@@ -245,19 +245,22 @@ header .container {
 }
 
 /* Стили для страницы журнала */
-.journal-section-wrapper {
-  max-width: 950px;
-  margin: 0 auto;
-  padding: 40px;
+.journal-wrapper {
   background: white;
-  border-radius: 20px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 40px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
 .journal-stages {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 900px;
 }
 
 .journal-stage-card {
@@ -271,10 +274,10 @@ header .container {
   display: block;
 }
 
-.journal-stage-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 102, 204, 0.2);
-  background-color: #e6f2ff;
+.journal-card:hover {
+  background-color: #d9efff;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 102, 204, 0.15);
 }
 
 .journal-stage-card h3 {
@@ -381,4 +384,92 @@ header .container {
   .journal-entry li {
     font-size: 1rem;
   }
+
+}
+
+.journal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+  max-width: 1400px; 
+  margin: 40px auto 0;
+  align-items: stretch;
+}
+
+.journal-card {
+  background-color: #e8f4fd;
+  border-radius: 50px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.journal-card h3 {
+  font-size: 1.3rem;
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.journal-card .entry-date {
+  display: inline-block;
+  background: #e6f2ff;
+  color: #003366;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+/* Навигация между этапами */
+.journal-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  background-color: #f0f8ff;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #003366;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  border: 1px solid rgba(0, 102, 204, 0.2);
+}
+
+.nav-button:hover {
+  background-color: #d0e8ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 102, 204, 0.1);
+}
+
+/* Для первой страницы (только вперед) */
+.journal-navigation.forward-only {
+  justify-content: flex-end;
+}
+
+/* Для последней страницы (только назад) */
+.journal-navigation.back-only {
+  justify-content: flex-start;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.journal-img-small {
+  max-width: 48%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
