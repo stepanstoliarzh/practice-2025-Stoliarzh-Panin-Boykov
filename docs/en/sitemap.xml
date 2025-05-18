@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/en/</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en-us"
+      href="https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/en/"
+    />
+  </url>
+  <url>
+    <loc>https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/en/categories/</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en-us"
+      href="https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/categories/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/en/categories/"
+    />
+  </url>
+  <url>
+    <loc>https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/en/tags/</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en-us"
+      href="https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/tags/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/en/tags/"
+    />
+  </url>
+</urlset>

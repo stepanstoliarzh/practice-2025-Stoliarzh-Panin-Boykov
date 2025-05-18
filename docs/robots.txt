@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/sitemap.xml
