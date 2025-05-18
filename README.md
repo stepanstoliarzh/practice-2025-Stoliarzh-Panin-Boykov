@@ -19,4 +19,4 @@
 - Git - контроль версий  
 
 ## Сайт
-**[Сайт доступен по ссылке](https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/)
+**[Сайт доступен по ссылке](https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/)**
