@@ -563,3 +563,27 @@ header .container {
     max-width: none;
   }
 }
+
+.journal-stage-card table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+
+.journal-stage-card th, 
+.journal-stage-card td {
+  padding: 8px 12px;
+  border: 1px solid #d0e8ff;
+  text-align: left;
+}
+
+.journal-stage-card th {
+  background-color: #e6f2ff;
+}
+
+.journal-stage-card pre {
+  background: #f0f8ff;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
