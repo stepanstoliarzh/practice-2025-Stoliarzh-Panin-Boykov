@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blowfish</title>
-    <link>https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/practice-2025-Stoliarzh-Panin-Boykov/en/</link>
+    <link>https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/en/</link>
     <description>Recent content on Blowfish</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 </copyright>
-    <atom:link href="https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/practice-2025-Stoliarzh-Panin-Boykov/en/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/en/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>
