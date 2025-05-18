@@ -1,41 +1,42 @@
-baseURL = "https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/"
-canonifyURLs = true
+baseURL = 'https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/'
 languageCode = 'ru'
-title = 'Группа проектов тестирования'
-theme = 'ananke'
+title = 'Водный спорт (I курс)'
+theme = 'blowfish'
+publishDir = 'docs'
 
 [menu]
-  [[menu.main]]
-    identifier = "about"
-    name = "О проекте"
-    url = "/about/"
-    weight = 1
 
   [[menu.main]]
-    identifier = "team"
-    name = "Участники"
-    url = "/team/"
-    weight = 2
+  name = "О проекте"
+  url = "/about"
+  weight = 1
 
   [[menu.main]]
-    identifier = "journal"
-    name = "Журнал"
-    url = "/journal/"
-    weight = 3
+  name = "Участники"
+  url = "/participants"
+  weight = 2
 
   [[menu.main]]
-    identifier = "resources"
-    name = "Ресурсы"
-    url = "/resources/"
-    weight = 4
+  name = "Журнал"
+  url = "/journal"
+  weight = 3
 
   [[menu.main]]
-    name = "Мероприятие"
-    url = "/visit/"
+  name = "Ресурсы"
+  url = "/resources"
+  weight = 4
+
+  [[menu.main]]
+    name = "Вариативное задания"
+    pageRef = "/variant"
     weight = 5
 
-  [[menu.main]]
-    name = "Вариативное задание"
-    url = "/variant/"
-    weight = 6
-    
+[params.assets]
+customCSS = ["css/custom.css"]
+
+[params.article]
+showDate = false
+showReadingTime = false
+showWordCount = false
+
+
