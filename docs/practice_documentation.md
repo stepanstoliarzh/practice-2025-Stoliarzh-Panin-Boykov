@@ -30,17 +30,12 @@
 
   - Использованы техники MITRE ATT&CK, включая:
 
-    `Exploit Public-Facing Application (T1190)`
-
-    `Valid Accounts (T1078)`
-
-    `Privilege Escalation (T1068)`
-
-    `Remote Services (T1021)`
-
-    `Data from Local System (T1005)`
-
-    `Exfiltration to Cloud Storage (T1567.002)`
+    `Exploit Public-Facing Application (T1190)
+    Valid Accounts (T1078)
+    Privilege Escalation (T1068)
+    Remote Services (T1021)
+    Data from Local System (T1005)
+    Exfiltration to Cloud Storage (T1567.002)`
 
 - Последствия:
 
