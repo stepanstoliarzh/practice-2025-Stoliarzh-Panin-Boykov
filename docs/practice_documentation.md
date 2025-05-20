@@ -116,13 +116,15 @@ https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/
   - Зарегистрированы и активированы аккаунты в Shodan, LeakIX и Hunter.io;
 
   - Получены API-ключи, успешно инициализированы для автоматизации запросов;
-
-<img src="/reports/images/amass_install.jpg" alt="Установка Amass" width="500"/>
-<img src="/reports/images/nmap_install.jpg" alt="Установка Nmap" width="500"/>
-<img src="/reports/images/Shodan_register.jpg" alt="Регистрация на Shodan" width="500"/> 
-<img src="/reports/images/LeakIX_register.jpg" alt="Регистрация на LeakIX" width="500"/>
-<img src="/reports/images/WHOIS_install.jpg" alt="Установка whois-утилиты" width="500"/>
-<img src="/reports/images/hunterio_register.jpg" alt="Регистрация на Hunter.io" width="500"/>
+  
+<div style="display: flex; gap: 20px;">
+  <img src="/reports/images/amass_install.jpg" alt="Установка Amass" width="500"/>
+  <img src="/reports/images/nmap_install.jpg" alt="Установка Nmap" width="500"/>
+  <img src="/reports/images/Shodan_register.jpg" alt="Регистрация на Shodan" width="500"/> 
+  <img src="/reports/images/LeakIX_register.jpg" alt="Регистрация на LeakIX" width="500"/>
+  <img src="/reports/images/WHOIS_install.jpg" alt="Установка whois-утилиты" width="500"/>
+  <img src="/reports/images/hunterio_register.jpg" alt="Регистрация на Hunter.io" width="500"/>
+</div>
 
 ### Ход работы:
 
