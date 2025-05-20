@@ -117,7 +117,12 @@ https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/
 
   - Получены API-ключи, успешно инициализированы для автоматизации запросов;
 
-📸 Пример регистрации и инициализации API-ключей:
+<img src="/reports/images/amass_install.jpg" alt="Установка Amass" width="500"/>
+<img src="/reports/images/nmap_install.jpg" alt="Установка Nmap" width="500"/>
+<img src="/reports/images/Shodan_register.jpg" alt="Регистрация на Shodan" width="500"/> 
+<img src="/reports/images/LeakIX_register.jpg" alt="Регистрация на LeakIX" width="500"/>
+<img src="/reports/images/WHOIS_install.jpg" alt="Установка whois-утилиты" width="500"/>
+<img src="/reports/images/hunterio_register.jpg" alt="Регистрация на Hunter.io" width="500"/>
 
 ### Ход работы:
 
