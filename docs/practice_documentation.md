@@ -141,16 +141,15 @@ https://stepanstoliarzh.github.io/practice-2025-Stoliarzh-Panin-Boykov/
 - Проанализированы сертификаты, заголовки HTTP, сигнатуры и структура сайта;
 
 - Сформирован отчёт с выводами по модели Kill Chain и MITRE ATT&CK.
-
-<img src="/reports/images/amass_result.jpg" alt="Amass результат" width="500"/>
-<img src="/reports/images/nmap_result.jpg" alt="Nmap результат" width="500"/>
 <div style="display: flex; gap: 20px;">
+  <img src="/reports/images/amass_result.jpg" alt="Amass результат" width="500"/>
+  <img src="/reports/images/nmap_result.jpg" alt="Nmap результат" width="500"/>
   <img src="/reports/images/Shodan_result1.jpg" alt="Shodan результат" width="350"/>
   <img src="/reports/images/Shodan_result2.jpg" alt="Shodan результат" width="350"/>
+  <img src="/reports/images/WHOIS_result.jpg" alt="WHOIS результат" width="500"/>
+  <img src="/reports/images/LeakLX_result.jpg" alt="LeakIX результат" width="500"/>
+  <img src="/reports/images/hunterio_result.jpg" alt="Hunter.io результат" width="500"/>
 </div>
-<img src="/reports/images/WHOIS_result.jpg" alt="WHOIS результат" width="500"/>
-<img src="/reports/images/LeakLX_result.jpg" alt="LeakIX результат" width="500"/>
-<img src="/reports/images/hunterio_result.jpg" alt="Hunter.io результат" width="500"/>
 
 - Выводы:
 
